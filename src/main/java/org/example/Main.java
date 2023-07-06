@@ -26,30 +26,43 @@ public class Main {
         printOptions();
 
         int userChoice = Integer.parseInt(input.nextLine());
-        int cpuChoice = r.nextInt(2);
+        int cpuChoice = r.nextInt(3);
 
+        System.out.print("Your choice: " + numbers.get(userChoice) + "\n");
         System.out.println("CPU choice: " + numbers.get(cpuChoice) + "\n");
 
-        if (userChoice == map.get(cpuChoice)){
+        if (userChoice == cpuChoice) {
 
-            System.out.println("User wins");
+            System.out.println("Draw game");
         }
 
-        else if (map.get(userChoice) != map.get(cpuChoice)){
+        else if (userChoice == 0 && cpuChoice == 2) {
 
-            System.out.println("CPU wins");
+            System.out.println("You win");
+        }
+
+        else if (userChoice == 1 && cpuChoice == 0) {
+
+            System.out.println("You win");
+        }
+
+        else if (userChoice == 2 && cpuChoice == 1) {
+
+            System.out.println("You win");
         }
 
         else {
 
-            System.out.println("Draw game");
+            System.out.println("CPU wins");
         }
     }
 
     public static void printOptions() {
 
         System.out.println("Please choose one of the following: ");
-        System.out.println("0 - Rock\n" + "1 - Paper\n" + "2 - Scissors");
-
+        System.out.println("""
+                0 - Rock
+                1 - Paper
+                2 - Scissors""");
     }
 }
