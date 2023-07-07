@@ -25,7 +25,7 @@ public class Main {
 
         printOptions();
 
-        int userChoice = Integer.parseInt(input.nextLine());
+        int userChoice = Integer.parseInt(input.nextLine()) - 1;
         int cpuChoice = r.nextInt(3);
 
         System.out.print("Your choice: " + numbers.get(userChoice) + "\n");
@@ -36,17 +36,7 @@ public class Main {
             System.out.println("Draw game");
         }
 
-        else if (userChoice == 0 && cpuChoice == 2) {
-
-            System.out.println("You win");
-        }
-
-        else if (userChoice == 1 && cpuChoice == 0) {
-
-            System.out.println("You win");
-        }
-
-        else if (userChoice == 2 && cpuChoice == 1) {
+        else if (map.get(userChoice) == cpuChoice) {
 
             System.out.println("You win");
         }
@@ -61,8 +51,8 @@ public class Main {
 
         System.out.println("Please choose one of the following: ");
         System.out.println("""
-                0 - Rock
-                1 - Paper
-                2 - Scissors""");
+                1 - Rock
+                2 - Paper
+                3 - Scissors""");
     }
 }
