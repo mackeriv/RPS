@@ -28,22 +28,22 @@ public class Main {
         int userChoice = Integer.parseInt(input.nextLine()) - 1;
         int cpuChoice = r.nextInt(3);
 
-        System.out.print("Your choice: " + numbers.get(userChoice) + "\n");
-        System.out.println("CPU choice: " + numbers.get(cpuChoice) + "\n");
+        System.out.print("\033[0;1m" + "Your choice: " + "\033[0;m" + numbers.get(userChoice) + "\n");
+        System.out.println("\033[0;1m" + "CPU choice: " + "\033[0;m" + numbers.get(cpuChoice) + "\n");
 
         if (userChoice == cpuChoice) {
 
-            System.out.println("Draw game");
+            System.out.println("\033[0;1m" + "Draw game");
         }
 
         else if (map.get(userChoice) == cpuChoice) {
 
-            System.out.println("You win");
+            System.out.println("\033[0;1m" + "You win");
         }
 
         else {
 
-            System.out.println("CPU wins");
+            System.out.println("\033[0;1m" + "CPU wins");
         }
     }
 
