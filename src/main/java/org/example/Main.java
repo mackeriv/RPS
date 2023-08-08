@@ -38,12 +38,12 @@ public class Main {
 
         else if (map.get(userChoice) == cpuChoice) {
 
-            System.out.println("\033[0;1m" + "You win");
+            System.out.println("\033[0;1m" + "You win!");
         }
 
         else {
 
-            System.out.println("\033[0;1m" + "CPU wins");
+            System.out.println("\033[0;1m" + "CPU wins!");
         }
     }
 
