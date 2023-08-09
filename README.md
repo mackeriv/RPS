@@ -4,6 +4,6 @@ A simple **Rock-Paper-Scissors** game in Java, coded for learning purposes. The 
 
 ![screenshot1](Images/1.png)
 
-![screenshot1](Images/2.png)
+![screenshot2](Images/2.png)
 
 **TO DO:** Implement small "quality of life" features such as automatic resets.
