@@ -33,7 +33,7 @@ public class Main {
 
         if (userChoice == cpuChoice) {
 
-            System.out.println("\033[0;1m" + "Draw game");
+            System.out.println("\033[0;1m" + "Draw game!");
         }
 
         else if (map.get(userChoice) == cpuChoice) {
